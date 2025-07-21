@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-6"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 01:07:21 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUw2Tkw5RUo7MjAyNS0wNy0yMTsxMjozMDo0MCBQTTsyNzU1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUw2Tkw5RUo7MjAyNS0wNy0yMTswMTowNzoyMSBQTTs0OzI4Njc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <input variable="length"/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <input variable="width"/>
+            <declare name="areaHouse" type="Real" array="False" size=""/>
+            <assign variable="areaHouse" expression="length *  width"/>
+            <declare name="BuiltinHouseLength" type="Real" array="False" size=""/>
+            <input variable="BuiltinHouseLength"/>
+            <declare name="BuiltinHouseWidth" type="Real" array="False" size=""/>
+            <input variable="BuiltinHouseWidth"/>
+            <declare name="AreaBuiltinHouse" type="Real" array="False" size=""/>
+            <assign variable="AreaBuiltinHouse" expression="BuiltinHouseLength * BuiltinHouseWidth"/>
+            <declare name="wage" type="Real" array="False" size=""/>
+            <assign variable="wage" expression="(areaHouse - AreaBuiltinHouse) * 2.00"/>
+            <output expression="wage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
