@@ -4,7 +4,7 @@ attempts_used = 0
 
 
 for i in range(3):  # 3 attempts
-    password = input("Enter password: ")
+    password = input('Enter password: ')
     attempts_used += 1
     
     if password == correct_password:
